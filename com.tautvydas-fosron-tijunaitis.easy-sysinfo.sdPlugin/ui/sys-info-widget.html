@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>System Info Settings</title>
+    <script src="sdpi-components.js"></script>
+</head>
+<body>
+    <sdpi-item label="Select Stat:">
+        <sdpi-select setting="stat">
+            <option value="cpu-usage">CPU Usage</option>
+            <option value="cpu-temp">CPU Temperature</option>
+            <option value="mem-usage">Memory Usage</option>
+            <option value="net-upload">Network Upload</option>
+            <option value="net-download">Network Download</option>
+            <option value="battery">Battery</option>
+            <option value="disk-space">Disk Space</option>
+        </sdpi-select>
+    </sdpi-item>
+
+    <script>
+        const { streamDeckClient } = SDPIComponents;
+
+        // Log when connected
+        streamDeckClient.didConnect.subscribe((info) => {
+            console.log('Stream Deck client connected:', info);
+        });
+
+        // Log when settings are received
+        streamDeckClient.didReceiveSettings.subscribe((event) => {
+            console.log('Settings received in property inspector:', event);
+        });
+
+        // Log when settings change
+        document.addEventListener('sdpiDidChangeSettings', (event) => {
+            console.log('Settings changed:', event.detail);
+        });
+    </script>
+</body>
+</html>
