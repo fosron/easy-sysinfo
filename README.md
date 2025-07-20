@@ -20,7 +20,15 @@
 
 ## Installation
 
-_Not yet available_
+### Automatic Installation
+
+1. Download the latest `com.tautvydas-fosron-tijunaitis.easy-sysinfo.streamDeckPlugin` file from the [Releases](https://github.com/your-repo/easy-sysinfo/releases) page or your build output.
+2. Double-click the `.streamDeckPlugin` file. The Stream Deck software will prompt you to install the plugin.
+3. Follow the on-screen instructions to complete the installation.
+
+### Manual Installation (Advanced)
+
+If you prefer, you can manually place the plugin folder in your Stream Deck plugins directory. Refer to the Elgato developer documentation for details.
 
 ## Usage
 
