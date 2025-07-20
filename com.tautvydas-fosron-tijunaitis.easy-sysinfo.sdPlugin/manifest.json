@@ -3,18 +3,18 @@
 	"Version": "0.1.0.0",
 	"Author": "Tautvydas Fosron Tijunaitis",
 	"Actions": [
-		    {
-      "Icon": "imgs/actions/widget/key",
-      "Name": "System Info",
-      "States": [
-        {
-          "Image": "imgs/actions/widget/key"
-        }
-      ],
-      "Tooltip": "Displays system information.",
-      "UUID": "com.tautvydas-fosron-tijunaitis.easy-sysinfo.widget",
-      "PropertyInspectorPath": "ui/sys-info-widget.html"
-    }
+		{
+			"Icon": "imgs/actions/widget/key",
+			"Name": "System Info",
+			"States": [
+				{
+					"Image": "imgs/actions/widget/key"
+				}
+			],
+			"Tooltip": "Displays system information.",
+			"UUID": "com.tautvydas-fosron-tijunaitis.easy-sysinfo.widget",
+			"PropertyInspectorPath": "ui/sys-info-widget.html"
+		}
 	],
 	"Category": "easy-sysinfo",
 	"CategoryIcon": "imgs/plugin/category-icon",
