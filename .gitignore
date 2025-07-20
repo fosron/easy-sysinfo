@@ -5,3 +5,5 @@ node_modules/
 *.sdPlugin/bin
 *.sdPlugin/logs
 .DS_Store
+
+com.tautvydas-fosron-tijunaitis.easy-sysinfo.streamDeckPlugin
